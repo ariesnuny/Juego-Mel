@@ -1,0 +1,87 @@
+@font-face {
+    font-family: CurlyGirl;
+    src: url(../IMG/Sun\ Flower.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #007032;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 98.7vw;
+}
+
+
+.botones button {
+    border: 0px;
+    background-color: #728aff;
+}
+.botones svg {
+    height: 3vh;
+    margin: 10px;
+    background-color: #728aff;
+}
+.botones {
+    width: 100%;
+    background-color: #728aff;
+}
+a {
+    background-color: #728aff;
+}
+
+.but {
+    border: 0px;
+}
+
+
+.carta {
+    font-family: CurlyGirl;
+    width: 70%;
+    height: 60%;
+    background-color: azure;
+    padding: 10px;
+    margin: 5px 30px;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    z-index: 3;
+    visibility: hidden;
+}
+h3, p {
+    font-size: larger;
+    background-color: azure;
+}
+
+.show {
+    visibility: visible;
+}
+.col {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#carta button {
+    width: 20%;
+    margin-left: 40%;
+    background-color: rgb(133, 1, 1);
+    border-radius: 30px;
+    font-size: 26px;
+    color: azure;
+    text-align: center;
+    border: 0px;
+}
+
+.final {
+    text-align: end;
+    margin: 20px;
+}
