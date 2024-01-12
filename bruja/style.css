@@ -1,0 +1,117 @@
+@font-face {
+    font-family: CurlyGirl;
+    src: url(../IMG/Sun\ Flower.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 239, 233);
+    font-family: CurlyGirl;
+}
+img {
+    height: 250px;
+}
+.scene {
+    display: inline-block;
+    width: 130px;
+    height: 210px;
+    /*   border: 1px solid #CCC; */
+    margin: 40px;
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+
+.mesa {
+    width: 97vw;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mesa-central {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    border: 0px;
+}
+svg {
+    height: 20px;
+    margin: 10px;
+}
+
+.cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop {
+    width: 70%;
+    height: 60%;
+    background-color: azure;
+    padding: 10px;
+    margin: 5px 30px;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    z-index: 3;
+    visibility: hidden;
+}
+h2, h3, p, del {
+    margin: 10px;
+    background-color: azure;
+    font-size: larger;
+}
+h2 {
+    text-align: center;
+}
+.show {
+    visibility: visible;
+}
+.col {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myDiv button {
+    width: 20%;
+    margin-left: 40%;
+    background-color: rgb(133, 1, 1);
+    border-radius: 30px;
+    font-size: 26px;
+    color: azure;
+    text-align: center;
+}
