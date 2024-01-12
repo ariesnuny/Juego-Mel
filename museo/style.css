@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #908fb2;
+}
+img {
+    width: 100%;
+    height: 92vh;
+}
+
+button {
+    border: 0px;
+    background-color: #b2a1a1;
+}
+svg {
+    height: 3vh;
+    margin: 10px;
+    background-color: #b2a1a1;
+}
+.botones {
+    width: 100%;
+    background-color: #b2a1a1;
+}
+a {
+    background-color: #b2a1a1;
+}
